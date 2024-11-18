@@ -1,0 +1,94 @@
+* {
+  font-family: Open Sans, Arial, sans-serif;
+  background-color: rgb(245, 245, 245);
+  color: rgb(77, 78, 83);
+}
+
+.navbar-header {
+  margin: 10px;
+  text-align: center;
+}
+
+#navbar {
+  flex-direction: column;
+  position: fixed;
+  display: block;
+  border-right: 3px solid rgba(0, 22, 22, 0.4);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  min-width: 200px;
+  overflow: auto;
+}
+
+.nav-link {
+  text-decoration: none;
+  border-top: 1px solid black;
+  display: block;
+  padding: 30px 30px 30px 30px;
+  cursor: pointer;
+}
+
+#main-doc {
+  margin-left: 320px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+header {
+  font-size: xx-large;
+  color: rgb(0, 0, 0);
+  line-height: 40px;
+}
+
+.main-section {
+  line-height: 23px;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+strong {
+  font-size: medium;
+}
+
+span {
+  font-weight: 600;
+}
+
+code {
+  display:block;
+  margin: 10px;
+  padding: 15px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  #main-doc {
+    position: relative;
+    margin-top: 250px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #navbar {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      margin-top: 10px;;
+      max-height: 250px;
+      border: none;
+      z-index: 1;
+      border-top: 2px solid rgb(1, 1, 1);
+      border-bottom: 2px solid rgb(1, 1, 1);
+      overflow: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav-link {
+    padding: 10px;
+  }
+}

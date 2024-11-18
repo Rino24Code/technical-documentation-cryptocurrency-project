@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Technical Documentation Page" />
+    <title>Technical Documentation: Cryptocurrency</title>
+    <link rel="stylesheet" href="/Technical Documentation Cryptocurrency/Technical-Documentation-Cryptocurrency.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header class="navbar-header">Documentation: Cryptocurrency</header>
+        <a class="nav-link" href="#Overview">Overview</a>
+        <a class="nav-link" href="#Components_of_Cryptocurrency_Systems">Components of Cryptocurrency Systems</a>
+        <a class="nav-link" href="#Cryptocurrency_Transactions">Cryptocurrency Transactions</a>
+        <a class="nav-link" href="#Mining_and_Staking">Mining and Staking</a>
+        <a class="nav-link" href="#Smart_Contracts">Smart Contracts</a>
+        <a class="nav-link" href="#Risks_and_Security">Risks and Security</a>
+        <a class="nav-link" href="#Applications_of_Cryptocurrency">Applications of Cryptocurrency</a>
+        <a class="nav-link" href="#Fundamental_Operations_Related_to_Cryptocurrency">Fundamental Operations Related to Cryptocurrency</a>
+        <a class="nav-link" href="#Conclusion">Conclusion</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Overview">
+        <header>Overview</header>
+          <p>Cryptocurrency is a form of digital or virtual currency that uses cryptography to secure transactions, control the creation of additional units, and verify asset transfers. Unlike traditional currencies issued by governments, cryptocurrencies are typically decentralized and rely on a technology called blockchain. This documentation covers the core components of cryptocurrency, the mechanisms behind it, and the technical details for understanding and interacting with cryptocurrency systems.</p>
+      </section>
+      <section class="main-section" id="Components_of_Cryptocurrency_Systems">
+        <header>Components of Cryptocurrency Systems</header>
+        <p><strong>1. Blockchain Technology</strong></p>
+            <ul>
+              <li><span>Definition:</span> A blockchain is a distributed, immutable ledger consisting of a series of blocks. Each block contains a set of transactions.</li>
+              <li><span>Structure:</span> Each block includes: 
+               <ul>
+                  <li><span>Block Header:</span> Contains metadata such as the previous block hash, timestamp, and nonce.</li>
+                  <li><span>Transaction Data:</span> All validated transactions are stored here.</li>
+                </ul> 
+              </li>
+              <li><span>Immutability:</span> Blocks are linked together through cryptographic hashing, making it difficult to alter previous blocks without invalidating the entire chain.</li>
+            </ul>
+            <p><strong>2. Nodes</strong></p>
+            <ul>
+              <li><span>Definition:</span> Nodes are computers within the network that maintain copies of the blockchain and validate transactions.</li>
+               <li><span>Types of Nodes:</span>
+                <ul>
+                  <li><span>Full Nodes:</span> Store complete copies of the blockchain and verify every transaction.
+                  </li>
+                  <li><span>Light Nodes:</span> Rely on full nodes for data validation, storing only headers.
+                  </li>
+                  <li><span>Mining Nodes:</span> Special nodes that validate transactions by solving cryptographic puzzles and add new blocks to the chain.
+                  </li>
+                </ul>
+               </li>
+            </ul>
+            <p><strong>3. Cryptographic Keys</strong></p>
+            <ul>
+              <li><span>Public and Private Keys:</span>Each user holds a public key (address for receiving funds) and a private key (used to authorize transactions).</li>
+              <li><span>Elliptic Curve Cryptography (ECC):</span>Many cryptocurrencies, including Bitcoin, use ECC for generating keys and securing transactions.</li>
+            </ul>
+            <p><strong>4. Wallets</strong></p>
+            <ul>
+              <li><span>Definition:</span>Wallets store private and public keys, allowing users to manage their funds.</li>
+              <li><span>Types:</span>
+                <ul>
+                  <li><span>Software Wallets:</span> Applications or programs on a device.</li>
+                  <li><span>Hardware Wallets:</span> Physical devices designed for securely storing keys offline.</li>
+                  <li><span>Paper Wallets:</span> Printed versions of public and private keys for secure offline storage.</li>
+                </ul>
+              </li>
+            </ul>
+            <p><strong>5. Consensus Mechanisms</strong></p>
+            <ul>
+              <li><span>Definition:</span>Protocols that validate transactions and secure the network.</li>
+              <li><span>Types:</span>
+                <ul>
+                  <li><span>Proof of Work (PoW):</span> Used by Bitcoin; miners solve complex problems to validate transactions.</li>
+                  <li><span>Proof of Stake (PoS):</span> Used by Ethereum 2.0; validators lock up a stake to participate in block validation.</li>
+                  <li><span>Other Mechanisms:</span> Delegated Proof of Stake (DPoS), Proof of Authority (PoA), etc.</li>
+                </ul>
+              </li>
+            </ul>
+      </section>
+      <section class="main-section" id="Cryptocurrency_Transactions">
+        <header>Cryptocurrency Transactions</header>
+        <p><strong>1. Structure of a Transaction</strong></p>
+            <ul>
+              <li><span>Inputs:</span> The sources of cryptocurrency in a transaction, referencing previous transactions.</li>
+              <li><span>Outputs:</span> Addresses and amounts to which funds are sent.</li>
+              <li><span>Signatures:</span> Each input is signed with a private key to authorize the transaction.</li>
+              <li><span>Transaction ID:</span> Unique identifier generated through hashing.</li>
+            </ul>
+            <p><strong>2. Validation Process</strong></p>
+            <ul>
+              <li>Transactions are broadcasted to the network.</li>
+              <li>Nodes verify inputs, checking the validity and the available funds.</li>
+              <li>Confirmed transactions are added to a block, validated by miners or validators depending on the consensus model.</li>
+            </ul>
+            <p><strong>3. Transaction Fees</strong></p>
+            <ul>
+              <li>Transaction fees incentivize miners or validators to prioritize a transaction. Higher fees often lead to quicker confirmation.</li>
+            </ul>
+      </section>
+      <section class="main-section" id="Mining_and_Staking">
+        <header>Mining and Staking</header>
+        <p><strong>1. Mining</strong></p>
+            <ul>
+              <li><span>Process:</span> Miners use computational power to solve cryptographic puzzles in PoW systems.</li>
+              <li><span>Reward:</span> Miners receive a block reward (e.g., new cryptocurrency units) and transaction fees.</li>
+              <li><span>Energy Consumption:</span> Mining is resource-intensive, requiring substantial power and hardware.</li>
+            </ul>
+          <p><strong>2. Staking</strong></p>
+            <ul>
+              <li><span>Process:</span> Users lock up their coins as collateral in PoS-based systems to participate in block validation.</li>
+              <li><span>Reward:</span> Validators earn staking rewards proportional to their stake.</li>
+              <li><span>Energy Efficiency:</span> Staking is less resource-intensive than mining.</li>
+            </ul>
+      </section>
+      <section class="main-section" id="Smart_Contracts">
+        <header>Smart Contracts</header>
+          <ol>
+            <li><span>Definition:</span> Self-executing contracts with predefined rules directly embedded in the blockchain.</li>
+            <li><span>Functionality:</span> Execute when conditions are met (e.g., transfer funds when a product is delivered).</li>
+            <li><span>Platforms:</span> Ethereum, Solana, and Binance Smart Chain are notable for supporting smart contracts.</li>
+          </ol>
+      </section>
+      <section class="main-section" id="Risks_and_Security">
+        <header>Risks and Security</header>
+          <ol>
+            <li><span>Double Spending:</span> Attempting to spend the same cryptocurrency in two transactions, prevented by blockchain consensus mechanisms.</li>
+            <li><span>51% Attack:</span> A scenario where an attacker gains control of more than 50% of the network’s hash rate (PoW) or stake (PoS).</li>
+            <li><span>Private Key Security:</span> If private keys are compromised, attackers can gain access to the user's funds.</li>
+            <li><span>Regulatory Risks:</span> Cryptocurrency faces potential regulatory restrictions, impacting exchanges and access.</li>
+          </ol>
+      </section>
+      <section class="main-section" id="Applications_of_Cryptocurrency">
+        <header>Applications of Cryptocurrency</header>
+          <ol>
+            <li><span>Payment Systems:</span> Secure, fast, and borderless transactions.</li>
+            <li><span>Decentralized Finance (DeFi):</span> Financial services (e.g., lending, borrowing) without traditional financial intermediaries.</li>
+            <li><span>Non-Fungible Tokens (NFTs):</span> Unique tokens representing digital ownership, often used for art, gaming assets, and collectibles.</li>
+            <li><span>Decentralized Autonomous Organizations (DAOs):</span>  Blockchain-based organizations governed by token holders.</li>
+          </ol>
+      </section>
+      <section class="main-section" id="Fundamental_Operations_Related_to_Cryptocurrency">
+        <header>Fundamental Operations Related to Cryptocurrency</header>
+         <ol>
+           <li>Generate Public and Private Keys Using ecdsa</li>
+            <p>This example uses the ecdsa library to create a private-public key pair using Elliptic Curve Cryptography (ECC), commonly used in cryptocurrency.</p>
+            <code>from ecdsa import SigningKey, SECP256k1<br>
+            # Generate a private key<br>
+private_key = SigningKey.generate(curve=SECP256k1)<br>
+public_key = private_key.get_verifying_key()<br>
+print("Private Key:", private_key.to_string().hex())<br>
+print("Public Key:", public_key.to_string().hex())</code>
+           <li>Hashing a Transaction with SHA-256</li>
+           <p>Cryptocurrencies rely on cryptographic hashing for security. Here’s how to hash a transaction using SHA-256, which is used to secure transactions in many blockchains.</p>
+           <code>import hashlib<br>
+transaction = "Alice sends 2 BTC to Bob"<br>
+transaction_hash = hashlib.sha256(transaction.encode()).hexdigest()<br>
+print("Transaction Hash:", transaction_hash)</code>
+           <li>Signing a Transaction</li>
+           <p>This code signs a transaction using the private key, creating a digital signature to prove the authenticity of the transaction. In real-world use, the transaction would be serialized before signing.</p>
+           <code># Reuse private_key from Example 1<br>
+transaction_data = "Alice sends 2 BTC to Bob"<br>
+signature = private_key.sign(transaction_data.encode())<br>
+print("Signature:", signature.hex())</code>
+          <li>Verifying a Transaction Signature</li>
+           <p>This snippet verifies the signature of a transaction using the public key, ensuring the transaction hasn't been tampered with.</p>
+           <code># Reuse public_key and signature from Examples 1 and 3<br>
+try:<br>
+    is_verified = public_key.verify(signature, transaction_data.encode())<br>
+    print("Signature Verified:", is_verified)<br>
+except:<br>
+    print("Invalid Signature")</code>
+          <li>Proof-of-Work Simulation</li>
+           <p>This simple proof-of-work function tries to find a hash with a specific number of leading zeros by incrementing a nonce value. This concept is foundational to Bitcoin mining.</p>
+           <code>def proof_of_work(data, difficulty=4):<br>
+    nonce = 0<br>
+    prefix = '0' * difficulty<br>
+    while True:<br>
+        text = data + str(nonce)<br>
+        new_hash = hashlib.sha256(text.encode()).hexdigest()<br>
+        if new_hash.startswith(prefix):<br>
+            return nonce, new_hash<br>
+        nonce += 1<br>
+
+data = "Block Data"<br>
+nonce, pow_hash = proof_of_work(data)<br>
+print(f"Nonce: {nonce}, Hash: {pow_hash}")</code>
+         </ol>
+      </section>
+      <section class="main-section" id="Conclusion">
+        <header>Conclusion</header>
+        <p>Cryptocurrency leverages cryptographic techniques and distributed ledger technology to create a secure, decentralized form of money and enables a range of applications, from finance to digital ownership. Understanding cryptocurrency requires knowledge of blockchain technology, consensus mechanisms, cryptographic keys, and the economic incentives that drive network security. The growth of cryptocurrencies continues to push the boundaries of technology and finance, with ongoing advancements in security, efficiency, and usability.</p>
+      </section>
+    </main>
+  </body>
+
+</html>
